@@ -18,7 +18,7 @@ services:
       - .:/app:delegated
     environment:
       - LAGOON_LOCALDEV_HTTP_PORT=3000
-      - LAGOON_ROUTE=http://wo-website-wo-eu-gatsby.docker.amazee.io
+      - LAGOON_ROUTE=http://wo-template-nextjs-for-sanity.docker.amazee.io
 
 networks:
   amazeeio-network:

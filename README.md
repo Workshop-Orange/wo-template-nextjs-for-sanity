@@ -34,7 +34,7 @@ Finally, run the container
 docker-compose up
 ```
 
-Open [http://wo-website-wo-eu-gatsby.docker.amazee.io](http://wo-website-wo-eu-gatsby.docker.amazee.io) with your browser to see the result.
+Open [http://wo-template-nextjs-for-sanity.docker.amazee.io](http://wo-template-nextjs-for-sanity.docker.amazee.io) with your browser to see the result.
 You can alter the URL to match your project by editing `LAGOON_ROUTE` in docker-compose.yml
 
 ## Getting Started With amazee.io Pygmy (Simulate Production)
@@ -61,6 +61,6 @@ Finally, run the container
 docker-compose up
 ```
 
-Open [http://wo-website-wo-eu-gatsby.docker.amazee.io](http://wo-website-wo-eu-gatsby.docker.amazee.io) with your browser to see the result.
+Open [http://wo-template-nextjs-for-sanity.docker.amazee.io](http://wo-template-nextjs-for-sanity.docker.amazee.io) with your browser to see the result.
 You can alter the URL to match your project by editing `LAGOON_ROUTE` in docker-compose.yml
 
