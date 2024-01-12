@@ -1,3 +1,7 @@
+# Workshop Orange Template NextJS for Sanity
+
+This project is the NextJS Template for the Sanity project at https://github.com/Workshop-Orange/wo-template-sanity-for-nextjs.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and configured to run in [amazee.io](https://amazee.io) / [Lagoon](https://lagoon.sh/).
 
 ## Getting Started Without amazee.io Pygmy
