@@ -5,6 +5,7 @@ services:
   node:
     env_file:
       - .lagoon.env
+      - .env.local
     networks:
       - amazeeio-network
       - default
