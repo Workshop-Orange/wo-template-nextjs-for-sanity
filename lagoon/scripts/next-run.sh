@@ -6,8 +6,6 @@ source /lagoon/entrypoints/50-dotenv.sh
 # Generate some additional enviornment variables
 source /lagoon/entrypoints/55-generate-env.sh
 
-export
-
 echo "$LAGOON_ENVIRONMENT_TYPE: NextJS is starting"
 
 if [ "$LAGOON_ENVIRONMENT_TYPE" == "production" ]; then
