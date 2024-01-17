@@ -1,18 +1,12 @@
 import { getClient } from "@/lib/sanity.client"
 import { postSlugsQuery } from "@/lib/sanity.queries"
-import { getPost } from "@/lib/sanity.queries";
+import { getPost, getAllPost } from "@/lib/sanity.queries";
 
 export const dynamicParams = false;
 
 type PageType = {
   params: {
     slug: string
-  }
-}
-
-type Slug = {
-  slug: {
-      current: string
   }
 }
 
@@ -28,12 +22,9 @@ export default async function Page(data: PageType) {
 }
 
 export async function generateStaticParams() {
-
-  const client = getClient()
-  
-  const slugs: Slug[] = await client.fetch(postSlugsQuery)
+   const slugs = await getAllPost();
+   console.log({ slugs })
   const vals = slugs.map((item) => item.slug.current.replace('/post/', ''))
-  console.log({vals })
 
   return vals.map((item) => ({
     slug: item,
