@@ -22,6 +22,7 @@ ARG NEXT_PUBLIC_SANITY_PROJECT_ID
 ARG SANITY_API_READ_TOKEN
 ARG NEXT_PUBLIC_SANITY_API_VERSION
 RUN echo "$LAGOON_ENVIRONMENT_TYPE: Switching to image runner"
+RUN export
 
 ########################################################
 # Copy and build
