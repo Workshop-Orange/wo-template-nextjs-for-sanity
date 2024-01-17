@@ -32,12 +32,12 @@ COPY . /app
 
 RUN if [[ "$LAGOON_ENVIRONMENT_TYPE" == "production" ]]; then \
 	echo "$LAGOON_ENVIRONMENT_TYPE: Running production build"; \
-	npm run build; \
-	else \
+	/app/lagoon/scripts/next-build.sh; \
+    else \
 	echo "$LAGOON_ENVIRONMENT_TYPE: Skipping production build"; \
-	fi
+    fi
 
 ########################################################
 # Set the command to run
 ########################################################
-CMD ["/app/lagoon/scripts/next.sh"]
+CMD ["/app/lagoon/scripts/next-run.sh"]
