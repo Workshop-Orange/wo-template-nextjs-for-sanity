@@ -3,6 +3,7 @@ import { postSlugsQuery } from "@/lib/sanity.queries"
 import { getPost, getAllPost } from "@/lib/sanity.queries";
 
 export const dynamicParams = false;
+export const revalidate = 60
 
 type PageType = {
   params: {
